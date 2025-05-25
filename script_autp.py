@@ -9,3 +9,5 @@ phone_number = ['+91 9935709273','+91 9044836877']  # Replace with recipient's n
 for i in phone_number:
     message = "Good Morning!"
     pywhatkit.sendwhatmsg_instantly(i, message)
+
+print('Done ! Successfully!')
