@@ -1,1 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Whatapp MSG') {
+            steps {
+                git 'https://github.com/Surajraikaushik/whats_auto.git'
+                sh 'py script_autp.py'
+                echo 'send successfully------'
+            }
+        }
+    }
+}
 
